@@ -12,6 +12,19 @@ export default function apostila03() {
   setContador(contador + 1);
 
  }
+
+ function SubNumber(){
+  setContador(contador - 1);
+
+ }
+
+
+function Number(){
+ setContador(contador - contador);
+
+}
+
+
   return (
     <View style={styles.container}>
       <Text style={styles.paragraph}>Exemplo apostila 3</Text>
@@ -23,6 +36,20 @@ export default function apostila03() {
         onPress={ () => AddNumber()}
       >
         <Text style={styles.textButton}>Somar +1</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity 
+        style={styles.button}
+        onPress={ () => SubNumber()}
+      >
+        <Text style={styles.textButton}>Subtrai 1</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity 
+        style={styles.button}
+        onPress={ () => Number()}
+      >
+        <Text style={styles.textButton}>Zerar</Text>
       </TouchableOpacity>
     
     </View>
