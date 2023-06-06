@@ -6,10 +6,12 @@ function Apostila04() {
   const [entrada, setEntrada] = useState("");
   const [mensagem, setMensagem] = useState("Aqui aparece o texto digitador");
  
+  const[sobrenome, setsobreNome]= useState ('Sobrenome');
 
   function apresentaMensagen(){
-      setMensagem(entrada)
+      setMensagem(entrada, sobreNome)
       setEntrada('');
+      setsobreNome('');
 
   }
 
@@ -23,6 +25,13 @@ function Apostila04() {
         onChangeText={(inputEntrada) => setEntrada(inputEntrada)}
         value={entrada}
       />
+
+<TextInput
+        style={styles.txtEntrada}
+        onChangeText={(inputsobrenome) => setsobreNome(inputsobrenome)}
+        value={sobrenome}
+      />
+
 
       <TouchableOpacity
         style={styles.button}
