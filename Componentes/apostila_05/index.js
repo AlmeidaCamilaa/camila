@@ -1,6 +1,8 @@
-import React, { useState } from "react";
-import { Text, View, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
-import styles from 'apostila_05/styles';
+import * as React from "react";
+import {View, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import Constants from 'expo-constants';
+
+import styles from 'styles';
 
 export default function Index() {
   return (

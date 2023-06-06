@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#FF80AB',
       padding: 8,
     },
-    paragraph: {
+    Texto: {
       margin: 6,
       fontSize: 18,
       fontWeight: 'bold',
