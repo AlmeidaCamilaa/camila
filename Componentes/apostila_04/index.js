@@ -5,12 +5,12 @@ import styles from "./styles";
 function Apostila04() {
   const [entrada, setEntrada] = useState("");
   const [mensagem, setMensagem] = useState("Aqui aparece o texto digitador");
- 
-  const[sobrenome, setsobreNome]= useState ('Sobrenome');
+  const[nome, setNome]= useState ('');
+  const[sobrenome, setsobreNome]= useState ('');
 
   function apresentaMensagen(){
-      setMensagem(entrada, sobreNome)
-      setEntrada('');
+      setMensagem(nome + ' ' + sobrenome);
+      setNome('');
       setsobreNome('');
 
   }
@@ -22,13 +22,15 @@ function Apostila04() {
       <Text style={styles.txtSaida}>{mensagem}</Text>
       <TextInput
         style={styles.txtEntrada}
-        onChangeText={(inputEntrada) => setEntrada(inputEntrada)}
-        value={entrada}
+        onChangeText={(nome) => setNome(nome)} 
+      placeholder = 'nome'
+        value={nome}
       />
 
 <TextInput
         style={styles.txtEntrada}
         onChangeText={(inputsobrenome) => setsobreNome(inputsobrenome)}
+        placeholder = 'sobrenome'
         value={sobrenome}
       />
 

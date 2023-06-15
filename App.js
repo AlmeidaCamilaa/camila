@@ -9,7 +9,7 @@ import Apostila_06 from './Componentes/apostila_06/index';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Apostila_06/>
+      <Apostila03/>
       <StatusBar style="auto" />
     </View>
   );
