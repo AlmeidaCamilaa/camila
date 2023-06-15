@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#FF80AB',
       padding: 8,
     },
-    Texto: {
+    paragraph: {
       margin: 6,
       fontSize: 18,
       fontWeight: 'bold',
@@ -32,14 +32,24 @@ const styles = StyleSheet.create({
       marginTop: 10, 
     }, 
     button: {
-      backgroundColor: '#E91E63', 
-      height: 40, 
-      justifyContent: 'center', 
-      borderRadius: 10, 
-      marginTop: 20, 
+      backgroundColor: '#E91E63',
+      height: 50,
+      width: 50,
+      justifyContent: 'center',
+      borderRadius: 10,
+      marginTop: 20,
+      marginLeft: 10,
+    },
+    zerar: {
+      backgroundColor: '#E91E63',
+      justifyContent: 'center',
+      borderRadius: 10,
+      marginTop: 40,
+      width: '100%',
+      height: 40,
     }, 
     textButton: {
-      fontSize: 22, 
+      fontSize: 22,
       color: '#FF80AB', 
       textAlign: 'center', 
     }, 
@@ -48,6 +58,10 @@ const styles = StyleSheet.create({
       fontWeight: 'bold', 
       color: '#C51162',     
     }, 
+    botoes:{
+      justifyContent: 'center',
+      flexDirection: 'row',
+    }
   });
   
   export default styles;
