@@ -4,12 +4,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import Apostila03 from './Componentes/apostila_03/index';
 import Apostila04 from './Componentes/apostila_04/index';
 import Apostila_05 from './Componentes/apostila_05/index';
-import Apostila_06 from './Componentes/apostila_06/index';
+import Apostila06 from './Componentes/apostila_06/index';
+// import Apostila_06 from './Componentes/apostila_06/index';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Apostila03/>
+      <Apostila06/>
       <StatusBar style="auto" />
     </View>
   );
